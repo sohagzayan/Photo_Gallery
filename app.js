@@ -137,4 +137,16 @@ class PhotoGalery{
 }
 
 
+
+window.addEventListener('load', ()=>{
+    setTimeout(()=>{
+        const wrapper = document.querySelector('.wrapper')
+        const loading = document.querySelector('.loading')
+        wrapper.style.display = 'block'
+        loading.style.display = 'none'
+    }, 3000)
+})
+
+
+
 let myPhotoHouse = new PhotoGalery()

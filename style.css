@@ -8,7 +8,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #F5F0FE;
+    background-color: #2C2D30 !important;
 
 }
 
@@ -33,9 +33,9 @@ section{
 .container{
     width: 80%;
     margin-top: 100px;
-    background-color: white;
+    background-color: #2C2D30;
     padding: 50px;
-    box-shadow: 10px 10px 15px rgba(189, 189, 189, 0.746);
+    box-shadow: inset 6px 6px 6px #202125, inset -6px -6px 6px #3e3e3e;
     border-radius: 15px;
     text-align: center;
     
@@ -46,8 +46,9 @@ section{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 h1 {
@@ -58,20 +59,21 @@ h1 {
 }
 
 form {
-    width: 80%;
-    max-width: 300px;
+    width: 100% !important;
     background: transparent;
     border: none;
+    padding: 5px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.37);
     position: relative;
+    box-shadow: 3px 3px 3px #202125,  -3px -3px 3px #3e3e3e
 
 }
 
 form ion-icon{
     position: absolute;
-    top: 5px;
-    right: 0;
-    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
     opacity: .3;
     color: gray;
     transition: .2s ease;
@@ -85,6 +87,8 @@ input[type="text"] {
     font-size: 1.2rem;
     color: #6342C3;
     font-weight: 600;
+    background-color: transparent;
+    width: 90%;
 }
 
 input::placeholder{
@@ -294,7 +298,17 @@ small{
 }
 
 
+.wrapper{
+    display: none;
+}
 
+.loading{
+    position: absolute;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%, -50%) scale(3);
+   
+}
 
 
 
